@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+:root {
+  --c-red-200: #f1b9b7;
+  --c-blue-300: #a4a9fc;
+  --c-green-500: #4cceac;
+  --c-green-600: #2e7c67;
+  --c-primary-main: #141b2d;
+  &,
+  &.light {
+    --c-secondary-main: #4cceac;
+    --c-neutral-dark: #a3a3a3;
+    --c-neutral-main: #666666;
+    --c-neutral-light: rgb(20, 20, 20);
+    --c-gray-300: #3d3d3d;
+    --c-green-200: #1e5245;
+    --c-green-300: #2e7c67;
+    --c-green-400: #3da58a;
+    --c-green-600: #70d8bd;
+    --c-green-700: #94e2cd;
+    --c-blue-700: #a4a9fc;
+    --bg-default: #fcfcfc;
+    --bg-alt: #f2f0f0;
+    --btn-hover: rgba(0, 0, 0, 0.04);
+  }
+
+  &.dark {
+    --c-secondary-main: #4cceac;
+    --c-neutral-dark: #3d3d3d;
+    --c-neutral-main: #666666;
+    --c-neutral-light: rgb(224, 224, 224);
+    --c-gray-300: #a3a3a3;
+    --c-green-200: #b7ebde;
+    --c-green-300: #94e2cd;
+    --c-green-400: #70d8bd;
+    --c-green-600: #3da58a;
+    --c-green-700: #2e7c67;
+    --c-blue-700: #3e4396;
+    --bg-default: #141b2d;
+    --bg-alt: #1f2a40;
+    --btn-hover: rgba(255, 255, 255, 0.08);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  /* Creating animations for dark mode */
+  transition: background-color 0.3s, border 0.3s;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
